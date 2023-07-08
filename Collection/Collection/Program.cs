@@ -11,8 +11,32 @@
         //Generic - List ,dictionary,Sortedlist,stack and queue
         static void Main(string[] args)
         {
-            List_Demo list_Demo = new List_Demo();
-            list_Demo.Adding();
+            while (true)
+            {
+                Console.WriteLine("Enter 1 for List");
+                Console.WriteLine("Enter 2 for Array");
+                Console.WriteLine("Enter 3 for ArrayList");
+
+                int choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        List_Demo list_Demo = new List_Demo();
+                        list_Demo.Adding();
+                        break;
+                    case 2:
+                        Array_Demo array_Demo = new Array_Demo();
+                        array_Demo.Array_Ops();
+                        break;
+                    case 3:
+                        ArrayList_Demo arrayList = new ArrayList_Demo();
+                        arrayList.Array_List();
+                        break;
+                    default:
+                        break;
+                }
+            }
+            
         }
     }
 }
