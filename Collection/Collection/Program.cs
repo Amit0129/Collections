@@ -16,6 +16,7 @@
                 Console.WriteLine("Enter 1 for List");
                 Console.WriteLine("Enter 2 for Array");
                 Console.WriteLine("Enter 3 for ArrayList");
+                Console.WriteLine("Enter 4 for Dictionary");
 
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -31,6 +32,10 @@
                     case 3:
                         ArrayList_Demo arrayList = new ArrayList_Demo();
                         arrayList.Array_List();
+                        break;
+                    case 4:
+                        Dictionary_Demo dictionary_Demo = new Dictionary_Demo();
+                        dictionary_Demo.Dictionary_Op();
                         break;
                     default:
                         break;
